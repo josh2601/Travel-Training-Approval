@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>When the registration field is changed, calculates the total cost</description>
+        <field>registration</field>
+        <global>false</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>RegistrationTotalCost</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   var totalCost = g_form.getDecimalValue('registration') + g_form.getDecimalValue('airfare') + g_form.getDecimalValue('hotel_per_diem') + g_form.getDecimalValue('meals_per_diem') + g_form.getDecimalValue('mileage') + g_form.getDecimalValue('rental_car') + g_form.getDecimalValue('tolls') + g_form.getDecimalValue('shuttle_taxi') + g_form.getDecimalValue('parking');
+
+    g_form.setValue('total_estimated_cost', totalCost);
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-08 15:58:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a4dfbe94db12001088f88a1848961967</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>RegistrationTotalCost</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope>
+        <sys_update_name>sys_script_client_a4dfbe94db12001088f88a1848961967</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-08 16:03:58</sys_updated_on>
+        <table>x_433469_travel_tr_travel_training</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

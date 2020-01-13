@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Calls a script to calculate the vehicle mileage cost.</description>
+        <field>total_miles</field>
+        <global>false</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>MileageCalculationTrigger</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    g_ui_scripts['x_433469_travel_tr.CalculationHelpers'].then(function(script) {
+        script.calculateTotalCost();
+    });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-07 21:35:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0c9107c8db16001088f88a1848961985</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>MileageCalculationTrigger</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope>
+        <sys_update_name>sys_script_client_0c9107c8db16001088f88a1848961985</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 23:01:58</sys_updated_on>
+        <table>x_433469_travel_tr_travel_training</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Training Approval">77360133db82001088f88a184896192a</application>
+        <file_path/>
+        <instance_id>ed48db54db6b1f8452e3f70fbf9619e2</instance_id>
+        <instance_name>dev66720</instance_name>
+        <name>sys_script_client_0c9107c8db16001088f88a1848961985</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Calls a script to calculate the vehicle mileage cost.&lt;/description&gt;&lt;field&gt;total_miles&lt;/field&gt;&lt;global&gt;false&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;MileageCalculationTrigger&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    g_ui_scripts['x_433469_travel_tr.CalculationHelpers'].then(function(script) {
+        script.calculateTotalCost();
+    });
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-07 21:35:12&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0c9107c8db16001088f88a1848961985&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;MileageCalculationTrigger&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Travel Training Approval" source="x_433469_travel_tr"&gt;77360133db82001088f88a184896192a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Travel Training Approval"&gt;77360133db82001088f88a184896192a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_0c9107c8db16001088f88a1848961985&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-07 23:01:58&lt;/sys_updated_on&gt;&lt;table&gt;x_433469_travel_tr_travel_training&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1163812422</payload_hash>
+        <record_name>MileageCalculationTrigger</record_name>
+        <reverted_from/>
+        <source>37364133db82001088f88a1848961995</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-07 23:01:58</sys_created_on>
+        <sys_id>12a7574cdb56001088f88a184896195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f823e4b9d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 23:01:58</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>9aa7574c4f5600104753d3df81b0235a</update_guid>
+        <update_guid_history>9aa7574c4f5600104753d3df81b0235a:1163812422,2c779b8cdb560010cde3360a05806780:1731813108,a737df4c4c56001076d8aac81489cb99:435342864,47d51b4cee560010d7f03ed521de573a:1556682791,596553c8a5560010959651e224fb96f3:1264664422,19c453c8b156001016abafc61f2099ed:-2011852010,d54493c8f0560010a0fcce549ee12514:-2125140006,956353c8bb5600106bc0f945b93b5a84:687459791,73135f485c56001033b66d2d1fe0f02f:-1687995055,14b0d3c4105600106337eef13388f712:-1817664522,3cbf4bc46d560010adea77e2127b5713:-1336756878,b03f4784625600108d0dca51ee9e8490:-513640331,b6cecb44735600106ced6a0565b9d1ab:2100268795,d13e4b84e5560010f294b1f66b1a3d78:-513640331,b44d8b04255600106b90901127378dfa:-2046598746,edd80f40b4560010c09482c43c435483:-459041166,5bc3074c9c160010b6dbaaa31e81322f:20251114</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-08 15:41:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>10816d8b507d4d5a8fe8533584ccc9a4</sys_id>
+        <sys_metadata>0c9107c8db16001088f88a1848961985</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MileageCalculationTrigger</sys_name>
+        <sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package>
+        <sys_parent display_value="Travel Training">d7ea51b3dbc2001088f88a18489619f5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope>
+        <sys_scope_delete display_value="">2346f4aea5654e4297c4419d994a12e9</sys_scope_delete>
+        <sys_update_name>sys_script_client_0c9107c8db16001088f88a1848961985</sys_update_name>
+        <sys_update_version display_value="sys_script_client_0c9107c8db16001088f88a1848961985">12a7574cdb56001088f88a184896195b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-08 15:41:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

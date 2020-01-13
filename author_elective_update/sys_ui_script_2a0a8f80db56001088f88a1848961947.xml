@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
+    <sys_ui_script action="DELETE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_433469_travel_tr.CalculationHelpers</name>
+        <script><![CDATA[var x_433469_travel_tr = x_433469_travel_tr || {};
+
+x_433469_travel_tr.CalculationHelpers = (function() {
+    "use strict";
+
+    function calculateTotalCost() {
+        //TODO get mileageRate app property
+        var mileageRate = '0.58';
+        var mileageCost = g_form.getDecimalValue('total_miles') * mileageRate;
+        g_form.setValue('mileage', mileageCost);
+        var totalCost = g_form.getDecimalValue('registration') + g_form.getDecimalValue('airfare') + g_form.getDecimalValue('hotel_per_diem') + g_form.getDecimalValue('meals_per_diem') + mileageCost + g_form.getDecimalValue('rental_car') + g_form.getDecimalValue('tolls') + g_form.getDecimalValue('shuttle_taxi') + g_form.getDecimalValue('parking');
+
+        g_form.setValue('total_estimated_cost', totalCost);
+    }
+
+
+    return {
+        calculateTotalCost: calculateTotalCost,
+        type: "CalculationHelpers"
+    };
+})();]]></script>
+        <script_name>CalculationHelpers</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-07 22:08:33</sys_created_on>
+        <sys_id>2a0a8f80db56001088f88a1848961947</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_433469_travel_tr.CalculationHelpers</sys_name>
+        <sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope>
+        <sys_update_name>sys_ui_script_2a0a8f80db56001088f88a1848961947</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 22:57:42</sys_updated_on>
+        <ui_type>0</ui_type>
+        <use_scoped_format>true</use_scoped_format>
+    </sys_ui_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Training Approval">77360133db82001088f88a184896192a</application>
+        <file_path/>
+        <instance_id>ed48db54db6b1f8452e3f70fbf9619e2</instance_id>
+        <instance_name>dev66720</instance_name>
+        <name>sys_ui_script_2a0a8f80db56001088f88a1848961947</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description/&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;x_433469_travel_tr.CalculationHelpers&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var x_433469_travel_tr = x_433469_travel_tr || {};
+
+x_433469_travel_tr.CalculationHelpers = (function() {
+    "use strict";
+
+    function calculateTotalCost() {
+        //TODO get mileageRate app property
+        var mileageRate = '0.58';
+        var mileageCost = g_form.getDecimalValue('total_miles') * mileageRate;
+        g_form.setValue('mileage', mileageCost);
+        var totalCost = g_form.getDecimalValue('registration') + g_form.getDecimalValue('airfare') + g_form.getDecimalValue('hotel_per_diem') + g_form.getDecimalValue('meals_per_diem') + mileageCost + g_form.getDecimalValue('rental_car') + g_form.getDecimalValue('tolls') + g_form.getDecimalValue('shuttle_taxi') + g_form.getDecimalValue('parking');
+
+        g_form.setValue('total_estimated_cost', totalCost);
+    }
+
+
+    return {
+        calculateTotalCost: calculateTotalCost,
+        type: "CalculationHelpers"
+    };
+})();]]&gt;&lt;/script&gt;&lt;script_name&gt;CalculationHelpers&lt;/script_name&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-07 22:08:33&lt;/sys_created_on&gt;&lt;sys_id&gt;2a0a8f80db56001088f88a1848961947&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_433469_travel_tr.CalculationHelpers&lt;/sys_name&gt;&lt;sys_package display_value="Travel Training Approval" source="x_433469_travel_tr"&gt;77360133db82001088f88a184896192a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Travel Training Approval"&gt;77360133db82001088f88a184896192a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_2a0a8f80db56001088f88a1848961947&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-07 22:57:42&lt;/sys_updated_on&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;use_scoped_format&gt;true&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1930769172</payload_hash>
+        <record_name>x_433469_travel_tr.CalculationHelpers</record_name>
+        <reverted_from/>
+        <source>37364133db82001088f88a1848961995</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-07 22:57:42</sys_created_on>
+        <sys_id>3ba6db4cdb56001088f88a18489619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f823a62eb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 22:57:42</sys_updated_on>
+        <type>UI Script</type>
+        <update_guid>b3a6db4c255600100510224dbe46b3ab</update_guid>
+        <update_guid_history>b3a6db4c255600100510224dbe46b3ab:1930769172,75f513082b560010d9c437f2f61d85a2:1911744330,71ed0f44475600102023207e1f6d0408:-1038476789,847b4f40965600106a053b317bb3a1ea:1917704764</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-08 15:41:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_script">sys_ui_script</sys_db_object>
+        <sys_id>30361a8c91424b1889bbb89e345cab84</sys_id>
+        <sys_metadata>2a0a8f80db56001088f88a1848961947</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_433469_travel_tr.CalculationHelpers</sys_name>
+        <sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope>
+        <sys_scope_delete display_value="">2346f4aea5654e4297c4419d994a12e9</sys_scope_delete>
+        <sys_update_name>sys_ui_script_2a0a8f80db56001088f88a1848961947</sys_update_name>
+        <sys_update_version display_value="sys_ui_script_2a0a8f80db56001088f88a1848961947">3ba6db4cdb56001088f88a18489619ab</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-08 15:41:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

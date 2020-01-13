@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="DELETE">
+        <name>state</name>
+        <rest_message_function display_value="Default GET">4f8ccf90db52001088f88a184896199a</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-08 16:52:22</sys_created_on>
+        <sys_id>8eac43d0db52001088f88a1848961966</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>state</sys_name>
+        <sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_8eac43d0db52001088f88a1848961966</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-09 20:01:11</sys_updated_on>
+        <type>xml</type>
+        <value>co</value>
+    </sys_rest_message_fn_parameters>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Training Approval">77360133db82001088f88a184896192a</application>
+        <file_path/>
+        <instance_id>ed48db54db6b1f8452e3f70fbf9619e2</instance_id>
+        <instance_name>dev66720</instance_name>
+        <name>sys_rest_message_fn_parameters_8eac43d0db52001088f88a1848961966</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>state</name><rest_message_function display_value="Default GET">4f8ccf90db52001088f88a184896199a</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-01-08 16:52:22</sys_created_on><sys_id>8eac43d0db52001088f88a1848961966</sys_id><sys_mod_count>4</sys_mod_count><sys_name>state</sys_name><sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package><sys_policy/><sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope><sys_update_name>sys_rest_message_fn_parameters_8eac43d0db52001088f88a1848961966</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-01-09 20:01:11</sys_updated_on><type>xml</type><value>co</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+        <payload_hash>-1097636868</payload_hash>
+        <record_name>state</record_name>
+        <reverted_from/>
+        <source>37364133db82001088f88a1848961995</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-09 20:01:11</sys_created_on>
+        <sys_id>e571c9b8dbd2001088f88a18489619aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f8be580f30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-09 20:01:11</sys_updated_on>
+        <type>Variable Substitutions</type>
+        <update_guid>6171c9b8b8d20010765ec63d621ecdaa</update_guid>
+        <update_guid_history>6171c9b8b8d20010765ec63d621ecdaa:-1097636868,3e21817875d2001045d3c177bb338f61:476844862,b9b00db477d20010c37c3a1820e56196:-1097636868,033ecf906d520010a89efb2ad33dcef7:476844862,8aac43d065520010a5bad3f043c24c67:1236385715</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-10 18:02:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_parameters">sys_rest_message_fn_parameters</sys_db_object>
+        <sys_id>239544a2b9e745dc9a8eeb85b3e29609</sys_id>
+        <sys_metadata>8eac43d0db52001088f88a1848961966</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>state</sys_name>
+        <sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package>
+        <sys_parent display_value="Default GET">4f8ccf90db52001088f88a184896199a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope>
+        <sys_scope_delete display_value="">2346f4aea5654e4297c4419d994a12e9</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_parameters_8eac43d0db52001088f88a1848961966</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_parameters_8eac43d0db52001088f88a1848961966">e571c9b8dbd2001088f88a18489619aa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-10 18:02:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

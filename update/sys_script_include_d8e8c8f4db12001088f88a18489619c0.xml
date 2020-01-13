@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_433469_travel_tr.perDiemApiCall</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>perDiemApiCall</name>
+        <script><![CDATA[var perDiemApiCall = Class.create();
+perDiemApiCall.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getYear: function() {
+        gs.info('server script called');
+        var eventStartDateParam = this.getParameter('sysparm_eventStartDate');
+        var eventEndDateParam = this.getParameter('sysparm_eventEndDate');
+        var eventZipParam = this.getParameter('sysparm_eventZip');
+        var travelStartDateParam = this.getParameter('sysparm_travelStartDate');
+        var travelEndDateParam = this.getParameter('sysparm_travelEndDate');
+        gs.info("got params");
+
+        var eventStartDate = new GlideDateTime(eventStartDateParam);
+        var eventEndDate = new GlideDateTime(eventEndDateParam);
+        eventEndDate.addDaysUTC(1);
+        gs.info("eventenddate" + eventEndDate);
+
+        var travelStartDate = new GlideDateTime(travelStartDateParam);
+        var travelEndDate = new GlideDateTime(travelEndDateParam);
+        travelEndDate.addDaysUTC(1);
+        gs.info("travelenddate" + travelEndDate);
+
+        var eventDays = GlideDate.subtract(eventStartDate, eventEndDate).roundedDayPart;
+        gs.info("event" + eventDays);
+
+        var travelBeforeDays = GlideDate.subtract(travelStartDate, eventStartDate).roundedDayPart;
+        var travelAfterDays = GlideDate.subtract(eventEndDate, travelEndDate).roundedDayPart;
+        var travelDays = travelBeforeDays + travelAfterDays;
+        gs.info("travel" + travelDays);
+
+        var eventYear = eventStartDate.getYearUTC();
+        gs.info("year" + eventYear);
+		
+        var eventZip = eventZipParam;
+		gs.info("zip" + eventZip);
+
+        try {
+            var r = new sn_ws.RESTMessageV2('x_433469_travel_tr.PerDiemRESTMessage', 'Default GET');
+            r.setStringParameter('year', eventYear);
+            r.setStringParameter('zip', eventZip);
+
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            var parsedPerDiem = JSON.parse(responseBody);
+            var perDiemRate = parsedPerDiem.rates[0].rate[0].meals;
+            gs.info('perdiem rate: ' + perDiemRate);
+
+            var perDiem = (eventDays * perDiemRate) + (travelDays * perDiemRate * 0.75);
+            return perDiem;
+        } catch (ex) {
+            var message = ex.message;
+            gs.info('message: ' + message);
+        }
+    },
+    type: 'perDiemApiCall'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-09 16:14:05</sys_created_on>
+        <sys_id>d8e8c8f4db12001088f88a18489619c0</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_name>perDiemApiCall</sys_name>
+        <sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope>
+        <sys_update_name>sys_script_include_d8e8c8f4db12001088f88a18489619c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-10 22:27:16</sys_updated_on>
+    </sys_script_include>
+</record_update>

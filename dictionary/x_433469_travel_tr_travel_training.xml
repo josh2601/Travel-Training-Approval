@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Travel Training" max_length="40" name="x_433469_travel_tr_travel_training" type="collection">
+        <element label="Airfare" mandatory="true" max_length="20" name="airfare" type="price"/>
+        <element label="Approval code" max_length="40" name="approval_code" read_only="true" type="integer"/>
+        <element label="Comments" max_length="4000" name="comments" type="string"/>
+        <element label="Department" mandatory="true" max_length="40" name="department" type="string"/>
+        <element choice_field="country" choice_table="cmn_location" label="City" mandatory="true" max_length="40" name="event_city" type="string"/>
+        <element label="Event end date" mandatory="true" max_length="40" name="event_end_date" type="glide_date"/>
+        <element label="Event start date" mandatory="true" max_length="40" name="event_start_date" type="glide_date"/>
+        <element label="State" mandatory="true" max_length="2" name="event_state" type="string"/>
+        <element label="GL account code" mandatory="true" max_length="40" name="gl_account_code" type="string"/>
+        <element label="Hotel/Lodging" max_length="20" name="hotel_per_diem" type="price"/>
+        <element label="Location" mandatory="true" max_length="40" name="location" type="string"/>
+        <element label="Meals per diem" max_length="20" name="meals_per_diem" read_only="true" type="price"/>
+        <element label="Mileage" max_length="38" name="mileage" read_only="true" type="price"/>
+        <element label="Parking" mandatory="true" max_length="20" name="parking" type="price"/>
+        <element label="Purpose" mandatory="true" max_length="200" name="purpose" type="string"/>
+        <element label="Registration" mandatory="true" max_length="20" name="registration" type="price"/>
+        <element label="Rental car" mandatory="true" max_length="20" name="rental_car" type="price"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="requested_for" type="domain_id"/>
+        <element label="Shuttle/Taxi" mandatory="true" max_length="20" name="shuttle_taxi" type="price"/>
+        <element label="Tolls" mandatory="true" max_length="20" name="tolls" type="price"/>
+        <element label="Total estimated cost" max_length="20" name="total_estimated_cost" read_only="true" type="price"/>
+        <element default="0" label="Total miles" mandatory="true" max_length="40" name="total_miles" type="integer"/>
+        <element label="Travel end date" mandatory="true" max_length="40" name="travel_end_date" type="glide_date"/>
+        <element label="Travel end location" mandatory="true" max_length="40" name="travel_end_location" type="string"/>
+        <element display="true" label="Travel start date" mandatory="true" max_length="40" name="travel_start_date" type="glide_date"/>
+        <element label="Travel start location" mandatory="true" max_length="40" name="travel_start_location" type="string"/>
+        <element label="I agree" max_length="40" name="u_boolean_12" type="boolean"/>
+        <element label="I will register myself" max_length="40" name="u_boolean_5" type="boolean"/>
+        <element label="I will book my own travel arrangements" max_length="40" name="u_boolean_6" type="boolean"/>
+        <element label="Agenda/details" max_length="40" name="u_file_attachment_1" type="file_attachment"/>
+        <element label="Agreement" max_length="65536" name="u_html_4" read_only="true" type="html"/>
+        <element label="Zip Code" mandatory="true" max_length="5" name="zip_code" type="string"/>
+        <index name="index">
+            <element name="requested_for"/>
+        </index>
+    </element>
+</database>

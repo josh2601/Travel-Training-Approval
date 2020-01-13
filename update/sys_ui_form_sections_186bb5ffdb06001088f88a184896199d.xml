@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="186bb5ffdb06001088f88a184896199d" sys_domain="global" table="x_433469_travel_tr_travel_training" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-06 21:40:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>546bf5ffdb06001088f88a1848961910</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_433469_travel_tr_travel_training" name="x_433469_travel_tr_travel_training" sys_domain="global" view="Default view">186bb5ffdb06001088f88a184896199d</sys_ui_form>
+            <sys_ui_section caption="Travel Training Approval Form" display_value="Travel Training Approval Form" name="x_433469_travel_tr_travel_training" sys_domain="global" view="Default view">9018fd7bdb06001088f88a1848961927</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-06 21:40:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-06 21:40:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>506bf5ffdb06001088f88a1848961911</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_433469_travel_tr_travel_training" name="x_433469_travel_tr_travel_training" sys_domain="global" view="Default view">186bb5ffdb06001088f88a184896199d</sys_ui_form>
+            <sys_ui_section caption="Event" display_value="Event" name="x_433469_travel_tr_travel_training" sys_domain="global" view="Default view">146bb5ffdb06001088f88a184896199b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-06 21:40:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-06 21:40:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>186bf5ffdb06001088f88a1848961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_433469_travel_tr_travel_training" name="x_433469_travel_tr_travel_training" sys_domain="global" view="Default view">186bb5ffdb06001088f88a184896199d</sys_ui_form>
+            <sys_ui_section caption="Travel" display_value="Travel" name="x_433469_travel_tr_travel_training" sys_domain="global" view="Default view">9c6bb5ffdb06001088f88a184896199b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-06 21:40:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-06 21:40:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c6bf5ffdb06001088f88a1848961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_433469_travel_tr_travel_training" name="x_433469_travel_tr_travel_training" sys_domain="global" view="Default view">186bb5ffdb06001088f88a184896199d</sys_ui_form>
+            <sys_ui_section caption="Costs" display_value="Costs" name="x_433469_travel_tr_travel_training" sys_domain="global" view="Default view">186bb5ffdb06001088f88a184896199c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-06 21:40:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-06 22:37:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>117806fbdb46001088f88a1848961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_433469_travel_tr_travel_training" name="x_433469_travel_tr_travel_training" sys_domain="global" view="Default view">186bb5ffdb06001088f88a184896199d</sys_ui_form>
+            <sys_ui_section caption="Acknowledgement" display_value="Acknowledgement" name="x_433469_travel_tr_travel_training" sys_domain="global" view="Default view">c97806fbdb46001088f88a184896194e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-06 22:37:26</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_433469_travel_tr_travel_training</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-01-06 21:40:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>186bb5ffdb06001088f88a184896199d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_433469_travel_tr_travel_training</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope>
+            <sys_update_name>sys_ui_form_sections_186bb5ffdb06001088f88a184896199d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-01-06 21:40:18</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

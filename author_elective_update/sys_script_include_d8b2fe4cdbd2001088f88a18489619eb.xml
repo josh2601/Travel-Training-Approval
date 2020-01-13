@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_433469_travel_tr.CalculateTotalCost</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Used to update the total cost field on the Travel Training Approval form</description>
+        <name>CalculateTotalCost</name>
+        <script><![CDATA[var CalculateTotalCost = Class.create();
+CalculateTotalCost.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	initialize : function(){},
+	calculateTotalCost : function(){
+
+var mileageRate = gs.getProperty('x_433469_travel_tr.mileageRate');
+var mileageCost = g_form.getDecimalValue('total_miles')  *  mileageRate;
+
+var totalCost = g_form.getDecimalValue('registration') + g_form.getDecimalValue('airfare') + g_form.getDecimalValue('hotel_per_diem') + g_form.getDecimalValue('meals_per_diem') + mileageCost + g_form.getDecimalValue('rental_car') + g_form.getDecimalValue('tolls') + g_form.getDecimalValue('shuttle_taxi') + g_form.getDecimalValue('parking');
+
+g_form.setValue('total_estimated_cost', 'totalCost');
+	},
+	
+    type: 'CalculateTotalCost'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-07 21:22:33</sys_created_on>
+        <sys_id>d8b2fe4cdbd2001088f88a18489619eb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CalculateTotalCost</sys_name>
+        <sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope>
+        <sys_update_name>sys_script_include_d8b2fe4cdbd2001088f88a18489619eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 21:44:33</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Travel Training Approval">77360133db82001088f88a184896192a</application>
+        <file_path/>
+        <instance_id>ed48db54db6b1f8452e3f70fbf9619e2</instance_id>
+        <instance_name>dev66720</instance_name>
+        <name>sys_script_include_d8b2fe4cdbd2001088f88a18489619eb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_433469_travel_tr.CalculateTotalCost&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Used to update the total cost field on the Travel Training Approval form&lt;/description&gt;&lt;name&gt;CalculateTotalCost&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var CalculateTotalCost = Class.create();
+CalculateTotalCost.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	initialize : function(){},
+	calculateTotalCost : function(){
+
+var mileageRate = gs.getProperty('x_433469_travel_tr.mileageRate');
+var mileageCost = g_form.getDecimalValue('total_miles')  *  mileageRate;
+
+var totalCost = g_form.getDecimalValue('registration') + g_form.getDecimalValue('airfare') + g_form.getDecimalValue('hotel_per_diem') + g_form.getDecimalValue('meals_per_diem') + mileageCost + g_form.getDecimalValue('rental_car') + g_form.getDecimalValue('tolls') + g_form.getDecimalValue('shuttle_taxi') + g_form.getDecimalValue('parking');
+
+g_form.setValue('total_estimated_cost', 'totalCost');
+	},
+	
+    type: 'CalculateTotalCost'
+});
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-01-07 21:22:33&lt;/sys_created_on&gt;&lt;sys_id&gt;d8b2fe4cdbd2001088f88a18489619eb&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;CalculateTotalCost&lt;/sys_name&gt;&lt;sys_package display_value="Travel Training Approval" source="x_433469_travel_tr"&gt;77360133db82001088f88a184896192a&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Travel Training Approval"&gt;77360133db82001088f88a184896192a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_d8b2fe4cdbd2001088f88a18489619eb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-01-07 21:44:33&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1969271648</payload_hash>
+        <record_name>CalculateTotalCost</record_name>
+        <reverted_from/>
+        <source>37364133db82001088f88a1848961995</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-07 21:44:33</sys_created_on>
+        <sys_id>5cf5474cdb16001088f88a1848961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>16f81f76a760000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-07 21:44:33</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>d4f5474c8c1600108940c305c8f96691</update_guid>
+        <update_guid_history>d4f5474c8c1600108940c305c8f96691:1969271648,5ac34bc8571600104b1ae2d37124e2b6:972603809,06e08b886e160010dc592e69da1687cb:-107308589</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-01-08 15:45:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>3be4a8a8f7e14ac09d4930d56c835890</sys_id>
+        <sys_metadata>d8b2fe4cdbd2001088f88a18489619eb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CalculateTotalCost</sys_name>
+        <sys_package display_value="Travel Training Approval" source="x_433469_travel_tr">77360133db82001088f88a184896192a</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Travel Training Approval">77360133db82001088f88a184896192a</sys_scope>
+        <sys_scope_delete display_value="">2346f4aea5654e4297c4419d994a12e9</sys_scope_delete>
+        <sys_update_name>sys_script_include_d8b2fe4cdbd2001088f88a18489619eb</sys_update_name>
+        <sys_update_version display_value="sys_script_include_d8b2fe4cdbd2001088f88a18489619eb">5cf5474cdb16001088f88a1848961991</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-01-08 15:45:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
